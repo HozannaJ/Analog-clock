@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       button {
+         padding: 20px;
+         margin: 90px;
+         border: none;
+       }
+
+       #light:hover{
+        color: rgb(0, 0, 0);
+        background-color: rgba(0, 255, 255, 0.226);
+       }
+
+       #dark:hover{
+         color: rgba(14, 11, 11, 0.788);
+         background-color: rgba(0, 0, 0, 0.199);
+
+       }
+
+    </style>
+
+</head >
+<body styles="text-align:center;">
+    <img src="Yv9Ql08yhIiC7YM3JIh5--1--gji05.jpg" alt="house" id="house">
+    <br>
+    <button type="button" onclick="light(1)" id="light">lights</button>
+    <button type="button" onclick="light(0)" id="dark">darken</button>
+    
+</body>
+<script>
+    function light(sw) {
+    var pic;
+       if(sw == 0 ) {
+        pic = "Yv9Ql08yhIiC7YM3JIh5--1--gji05.jpg"
+       }
+       else {
+        pic ="social edits.png"
+       }
+    document.getElementById("house").src = pic;
+       
+    }
+</script>
+
+</html>
